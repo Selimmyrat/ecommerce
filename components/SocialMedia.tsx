@@ -66,6 +66,7 @@ const SocialMedia = ({
           <Tooltip key={item?.title}>
             <TooltipTrigger asChild>
               <Link
+                key={item?.title}
                 target="_blank"
                 rel="noopener noreferrer"
                 href={item?.href}
@@ -78,6 +79,7 @@ const SocialMedia = ({
               </Link>
             </TooltipTrigger>
             <TooltipContent
+              key={item?.title}
               className={cn(
                 "bg-white text-darkColor font-semibold",
                 tooltipClassName
